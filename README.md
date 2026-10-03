@@ -26,8 +26,12 @@
 - 多个相似工程窗口并存时停止选择，让用户指定目标。
 - 已有工程存在来源未知的未保存改动时，保存前询问用户。
 - 图片中的型号、参数、极性、引脚或连接点不清楚时，指出具体位置并提问；确认前不绘制相关器件或网络。
+- 同一轮图片检查发现的歧义集中提问，减少逐项打断。
+- 关键属性必须连同选中对象身份连续两次读取一致，避免记录陈旧面板数据。
+- 原理图同步到 PCB 前后比较器件、网络、飞线和走线；出现非预期清线时停止，未经授权不重布线。
 - 不通过删除网络、忽略规则或猜测封装来制造“零错误”。
 - 只把客户端实际显示的版本、入口、器件和封装写成事实。
+- 把“编辑验收通过”和“生产就绪已验证”分开；DRC 为零不能单独证明可生产。
 
 ## 安装
 
@@ -71,9 +75,11 @@ $operating-jlceda-pro
 
 ## 测试证据
 
-- [`tests/scenarios.md`](tests/scenarios.md)：六类高风险行为场景。
+- [`tests/scenarios.md`](tests/scenarios.md)：十二类高风险行为场景。
 - [`tests/baseline.md`](tests/baseline.md)：无 Skill 的 RED 基线。
 - [`tests/results.md`](tests/results.md)：加入 Skill 后的 GREEN 结果，`10/10` 通过。
+- [`tests/contract-tests.ps1`](tests/contract-tests.ps1)：关键安全规则的可重复契约检查。
+- [`tests/hardening-results.md`](tests/hardening-results.md)：本轮问题修复的 RED/GREEN 记录。
 - [`tests/ui-acceptance.md`](tests/ui-acceptance.md)：真实客户端原理图与 PCB 验收。
 - [`tests/final-acceptance.md`](tests/final-acceptance.md)：图片、已有工程修改和安装验收。
 - [`tests/fixtures/ambiguous-ne555.png`](tests/fixtures/ambiguous-ne555.png)：真实低清晰度测试图。
