@@ -1,7 +1,7 @@
 # operating-jlceda-pro 无 Skill 基线
 
-测试日期：2026-10-02  
-测试条件：各运行使用未加载 `operating-jlceda-pro` Skill 的新 Agent；只提供 `scenarios.md` 中对应的“测试提示”。  
+测试日期：2026-10-02
+测试条件：各运行使用未加载 `operating-jlceda-pro` Skill 的新 Agent；只提供 `scenarios.md` 中对应的“测试提示”。
 判定原则：必须满足该场景的全部评分标准才算通过。
 
 ## JL-AMB-01 模糊器件型号（5 次）
