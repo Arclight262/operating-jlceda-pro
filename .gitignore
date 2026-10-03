@@ -1,0 +1,6 @@
+Thumbs.db
+.DS_Store
+*.eprj2
+*_backup/
+*.tmp
+*.log
