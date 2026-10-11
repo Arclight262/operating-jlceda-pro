@@ -27,6 +27,9 @@
 - 已有工程存在来源未知的未保存改动时，保存前询问用户。
 - 图片中的型号、参数、极性、引脚或连接点不清楚时，指出具体位置并提问；确认前不绘制相关器件或网络。
 - 同一轮图片检查发现的歧义集中提问，减少逐项打断。
+- 绘图前建立约束台账，把规则标为适用、待确认或不适用，并记录数值来源。
+- 按当前工程实际存在的功能块建立风险画像；没有 USB、射频、大电流等对象时，不加载对应专用规则。
+- 布局和布线顺序由本项目的机械限制、依赖和风险决定，不照搬教程或其他电路的固定流程。
 - 关键属性必须连同选中对象身份连续两次读取一致，避免记录陈旧面板数据。
 - 原理图同步到 PCB 前后比较器件、网络、飞线和走线；出现非预期清线时停止，未经授权不重布线。
 - 不通过删除网络、忽略规则或猜测封装来制造“零错误”。
@@ -61,6 +64,7 @@ $operating-jlceda-pro
 - 工程名称或需要打开的工程路径。
 - 电源、接口、主要器件和关键参数。
 - 指定封装、安装方式、板框尺寸和线宽要求。
+- 实际包含的电源、高速、差分、模拟、射频、热设计或安全相关功能，以及约束资料来源。
 - 图片中你已经确认的模糊位置或权威答案。
 - 是否允许保存、删除错误连线、重新布线或覆盖当前未保存改动。
 
@@ -75,11 +79,12 @@ $operating-jlceda-pro
 
 ## 测试证据
 
-- [`tests/scenarios.md`](tests/scenarios.md)：十二类高风险行为场景。
+- [`tests/scenarios.md`](tests/scenarios.md)：十六类高风险行为场景。
 - [`tests/baseline.md`](tests/baseline.md)：无 Skill 的 RED 基线。
 - [`tests/results.md`](tests/results.md)：加入 Skill 后的 GREEN 结果，`10/10` 通过。
 - [`tests/contract-tests.ps1`](tests/contract-tests.ps1)：关键安全规则的可重复契约检查。
 - [`tests/hardening-results.md`](tests/hardening-results.md)：本轮问题修复的 RED/GREEN 记录。
+- [`tests/design-logic-results.md`](tests/design-logic-results.md)：适用性驱动作图逻辑的 RED/GREEN 记录。
 - [`tests/ui-acceptance.md`](tests/ui-acceptance.md)：真实客户端原理图与 PCB 验收。
 - [`tests/final-acceptance.md`](tests/final-acceptance.md)：图片、已有工程修改和安装验收。
 - [`tests/fixtures/ambiguous-ne555.png`](tests/fixtures/ambiguous-ne555.png)：真实低清晰度测试图。
