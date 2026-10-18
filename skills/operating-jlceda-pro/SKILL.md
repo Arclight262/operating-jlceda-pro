@@ -9,7 +9,7 @@ description: "Use when Codex must operate the Windows JLCEDA Professional deskto
 
 ## 入口
 
-先读 [workflows.md](references/workflows.md)，按输入类型选择路线。原理图阶段读 [schematic.md](references/schematic.md)，PCB 阶段读 [pcb.md](references/pcb.md)。遇到版本或界面差异时读 [ui-baseline.md](references/ui-baseline.md)。执行验收工程时读 [acceptance.md](references/acceptance.md)。
+先读 [workflows.md](references/workflows.md)，按输入类型选择路线。原理图阶段读 [schematic.md](references/schematic.md)，PCB 阶段读 [pcb.md](references/pcb.md)。工程实际包含差分、等长、xSignals、约束区域、铜皮优先级、缝合过孔或泪滴任务时，再读 [advanced-pcb.md](references/advanced-pcb.md)。遇到版本或界面差异时读 [ui-baseline.md](references/ui-baseline.md)。执行验收工程时读 [acceptance.md](references/acceptance.md)。
 
 | 当前任务 | 先决条件 | 必须停止的情况 |
 |---|---|---|
@@ -40,6 +40,6 @@ description: "Use when Codex must operate the Windows JLCEDA Professional deskto
 
 ## 完成条件
 
-按功能块保存并复查可见状态。原理图需核对器件、参数、极性、引脚、网络与当前客户端可见的规则检查；PCB 需核对封装、板框、布局、布线、未布网络与 DRC。仅对约束台账中标为适用的项目作完成判定，并在报告中保留待确认项；不得通过删除网络或忽略规则制造零错误。
+按功能块保存并复查可见状态。原理图需核对器件、参数、极性、引脚、网络与当前客户端可见的规则检查；图片复刻还须核对器件的相对位置、朝向和导线画法与用户图纸一致，不能用电气等价或 DRC 零错误代替这项验收。PCB 需核对封装、板框、布局、布线、未布网络与 DRC。仅对约束台账中标为适用的项目作完成判定，并在报告中保留待确认项；不得通过删除网络或忽略规则制造零错误。
 
 最终结论分为两级：满足输入和当前规则集时可报告“编辑验收通过”；只有制造约束、设计规则、关键电气与机械检查均有明确依据并完成后，才可报告“生产就绪已验证”。DRC 为零或自动布线 100% 不能单独证明生产就绪。最终报告工程名、最终保存路径、已完成内容、保存状态、规则检查结果、未解决项、完成等级和可见证据，并区分“已验证版本”与“设计上兼容版本”。
