@@ -73,6 +73,9 @@
 | PCB DRC | [设计 - 检查 DRC](https://prodocs.lceda.cn/cn/pcb/design-check-drc/) | `设计 - 检查DRC`，结果在底部 DRC 窗口 |
 | 网络类、差分对、等长、xSignals | [网络类管理器](https://prodocs.lceda.cn/cn/pcb/design-net-class-manager/)、[差分对管理器](https://prodocs.lceda.cn/cn/pcb/design-differential-pair-manager/)、[等长网络组管理器](https://prodocs.lceda.cn/cn/pcb/design-equal-length-group-manager/)、[xSignals](https://prodocs.lceda.cn/cn/pcb/design-xsignals/) | 只在工程确有对应对象和约束来源时读取并使用 |
 | 泪滴、缝合孔、铺铜管理 | [工具 - 泪滴](https://prodocs.lceda.cn/cn/pcb/tools-teardrop/)、[放置 - 缝合孔](https://prodocs.lceda.cn/cn/pcb/place-suture-vias/)、[工具 - 铺铜管理器](https://prodocs.lceda.cn/cn/pcb/tools-copper-manager/) | 同上 |
+| 导出 Gerber | [导出 - 导出 PCB 制板文件 Gerber](https://prodocs.lceda.cn/cn/pcb/export-pcb-fabrication-file-gerber/) | `导出 - PCB制板文件(Gerber)`；只在用户要求时导出 |
+| 导出 BOM | [导出 - 导出 BOM](https://prodocs.lceda.cn/cn/pcb/export-bill-of-materials-bom/) | `导出 - 物料清单(BOM)` |
+| 导出坐标文件 | [导出 - 导出坐标文件](https://prodocs.lceda.cn/cn/pcb/export-pick-and-place-file/) | `导出 - 坐标文件(CPL)` |
 | SMT 选型 | [工具 - 嘉立创 SMT 选型工具](https://prodocs.lceda.cn/cn/pcb/tools-jlcpcb-smt-part-selection-tool/) | 用户要嘉立创贴片时读取 |
 
 ## 其他章节入口

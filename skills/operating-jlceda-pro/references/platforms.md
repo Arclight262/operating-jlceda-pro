@@ -39,7 +39,7 @@
 | 平台 | 状态 |
 |---|---|
 | Codex | v1 在客户端 V4.1.60 上完成真实验收（见仓库 `archive/v1`）；v2 尚未重新验收 |
-| Claude Code / Claude 桌面应用 | 2026-10-19 用 Claude（云端会话连接 Windows 电脑的电脑操作）在 V4.1.60 上完成一次图片复刻原理图：AMS1117-ADJ 双色指示电源，原理图 DRC 0 错误 0 警告。PCB 未测，完整验收未跑完 |
+| Claude Code / Claude 桌面应用 | 2026-10-19 用 Claude（云端会话连接 Windows 电脑的电脑操作）在 V4.1.60 上完成 AMS1117-ADJ 双色指示电源：图片复刻原理图（DRC 0 错误 0 警告）→ PCB 自动布线 100%、双层 GND 铺铜、PCB DRC 141 项 0 问题 → 导出 Gerber、BOM、坐标文件。tests/acceptance.md 的 A1–A6 尚未逐项跑完 |
 | DeepSeek Harness | 设计上兼容，未实测 |
 
 只有在该平台上完整跑通一次验收后，才能把状态改为“已验证”。报告中写明本次使用的平台。
