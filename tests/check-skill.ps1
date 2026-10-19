@@ -1,4 +1,4 @@
-# Skill 结构与关键规则检查（文档 lint）
+﻿# Skill 结构与关键规则检查（文档 lint）
 # 检查：frontmatter 格式、引用文件是否存在、关键规则原文是否仍在。
 # 它不能证明 Agent 的实际行为；行为测试见 tests/scenarios.md 与 tests/acceptance.md。
 # 有意改写某条规则的措辞时，请同步更新下面对应的 Pattern。
